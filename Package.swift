@@ -11,7 +11,6 @@ let package = Package(
             name: "Swift-YouTube-Player",
             targets: ["Swift-YouTube-Player"]),
     ],
-    path: "./YouTubePlayer/",
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
@@ -21,6 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "Swift-YouTube-Player",
+            path: "YouTubePlayer/YouTubePlayer/",
             dependencies: []),
     ]
 )
